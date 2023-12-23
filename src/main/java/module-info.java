@@ -5,4 +5,7 @@ module com.example.tableview {
 
     opens com.example.tableview to javafx.fxml;
     exports com.example.tableview;
+
+    opens com.example.tableview.controllers;
+    exports com.example.tableview.controllers;
 }

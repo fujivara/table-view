@@ -7,10 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane id="mianLayout" maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.tableview.controllers.MainController">
     <MenuBar id="mainMenuBar" layoutY="2.0" prefHeight="25.0">
         <Menu id="optionMenu" mnemonicParsing="false" text="Options">
-            <MenuItem id="importItem" mnemonicParsing="false" text="import"/>
+            <MenuItem id="importItem" mnemonicParsing="false" onAction="#onPressedImport" text="import"/>
         </Menu>
     </MenuBar>
     <ListView id="tablesList" layoutY="27.0" prefHeight="373.0" prefWidth="600.0"/>
