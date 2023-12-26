@@ -1,0 +1,28 @@
+/* style.css */
+.root {
+    -fx-font-size: 14pt;
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    -fx-base: #282c34; /* Background color */
+    -fx-accent: #61dafb; /* Accent color */
+    -fx-focus-color: #61dafb; /* Focus color */
+    -fx-faint-focus-color: #61dafb45; /* Faint focus color */
+}
+
+.menu-bar {
+    -fx-background-color: #282c34; /* Background color for the menu bar */
+}
+
+.menu {
+    -fx-text-fill: #ffffff; /* Text color for menu items */
+}
+
+.menu-item {
+    -fx-text-fill: #ffffff; /* Text color for menu items */
+}
+
+.table-view {
+    -fx-background-color: #ffffff; /* Background color for the table view */
+    -fx-text-fill: #000000; /* Text color for table view text */
+    -fx-control-inner-background: #ffffff; /* Background color for table view cells */
+    -fx-cell-hover-color: #61dafb45; /* Hover color for table view cells */
+}

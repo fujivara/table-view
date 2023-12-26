@@ -5,16 +5,18 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="mianLayout" maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.tableview.controllers.TableController">
-   <MenuBar id="mainMenuBar" layoutY="2.0" prefHeight="25.0">
-      <Menu id="optionMenu" mnemonicParsing="false" text="Options">
-         <items>
-            <MenuItem id="importItem" mnemonicParsing="false" onAction="#onClose" text="close"/>
-         </items>
-      </Menu>
-   </MenuBar>
-   <TableView layoutY="27.0" prefHeight="373.0" prefWidth="600.0"/>
+<AnchorPane fx:id="mainLayout" maxHeight="400.0" maxWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tableview.controllers.TableController">
+
+   <VBox fx:id="vBox">
+      <MenuBar id="mainMenuBar" VBox.vgrow="NEVER">
+         <Menu id="optionMenu" mnemonicParsing="false" text="Options">
+            <MenuItem id="importItem" mnemonicParsing="false" onAction="#onClose" text="Close" />
+            <MenuItem id="saveItem" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
+         </Menu>
+      </MenuBar>
+
+      <TableView fx:id="tableView" VBox.vgrow="ALWAYS" />
+   </VBox>
 </AnchorPane>
